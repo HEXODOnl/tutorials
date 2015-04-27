@@ -1,5 +1,6 @@
 # Getting started with your first VPS
-By: [@itscassa](http://github.com/itscassa)
+By: [@itscassa](http://github.com/itscassa)  
+Date: 28 April 2015
 
 ## Introduction
 So, you got your first VPS, but how can you use it? In this tutorial I'll guide you through the basic steps.

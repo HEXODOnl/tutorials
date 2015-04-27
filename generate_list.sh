@@ -2,8 +2,8 @@
 
 cat tutorials_template.md > en/list.md
 echo '' >> en/list.md
-echo "| Category | Title | Author |" >> en/list.md
-echo "| -------- |------ | ------ |" >> en/list.md
+echo "| Category | Title | Author | Date |" >> en/list.md
+echo "| -------- |------ | ------ | ---- |" >> en/list.md
 
 for path in en/tutorials/*/*.md
 do
@@ -14,8 +14,10 @@ do
 	title="${title/'# '/}"
 	author=$(cat $path | sed -n 2p)
 	author="${author/'By: '/}"
+	date=$(cat $path | sed -n 3p)
+	date="${date/'Date: '/}"
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
-	echo "| $category | [$title]($url) | $author | " >> en/list.md
+	echo "| $category | [$title]($url) | $author | $date | " >> en/list.md
 done;
 
 git config --global user.email "circleci@0fi.net"
