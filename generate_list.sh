@@ -18,6 +18,9 @@ do
 	echo "| $category | [$title]($url) | $author | " >> en/list.md
 done;
 
+git config --global user.email "circleci@0fi.net"
+git config --global user.name "CircleCI"
+
 git add -A
 git commit -m 'Generated list'
 git push origin gh-pages
