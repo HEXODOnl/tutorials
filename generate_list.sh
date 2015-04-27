@@ -20,7 +20,7 @@ do
 	author=$(cat $path | sed -n 2p)
 	author="${author/'By: '/}"
 	date=`stat -c %y $path | cut -d ' ' -f1`
-	url="${explode[1]}/${explode[2]}/${explode[3]}"
+	url="${explode[3]}"
 	echo "| [$title]($url) | $author | $date | " >> ${explode[0]}/${explode[1]}/${explode[2]}/index.md
 	echo ${explode[0]}/${explode[1]}/${explode[2]}
 done;
