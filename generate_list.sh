@@ -13,7 +13,3 @@ do
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
 	echo "| [$title]($url) | $category |" >> en/list.md
 done;
-
-git add -A
-git commit -m 'Generated list'
-git push
