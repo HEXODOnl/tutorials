@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cat tutorials_template.md > en/list.md
+echo '' >> en/list.md
 echo "| Title | Category |" >> en/list.md
 echo "| ----- | -------- |" >> en/list.md
 
