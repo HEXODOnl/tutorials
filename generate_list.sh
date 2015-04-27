@@ -10,6 +10,7 @@ do
 	echo "# Categories -> $category" >> $path/index.md
 	echo "| Title | Author | Date |" >> $path/index.md
 	echo "| ----- | ------ | ---- |" >> $path/index.md
+	echo "- [$category](${explode[1]})" >> en/list.md
 done;
 
 for path in en/tutorials/*/*-*.md
