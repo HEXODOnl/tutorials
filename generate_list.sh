@@ -12,7 +12,7 @@ do
 	category="$(tr '[:lower:]' '[:upper:]' <<< ${category:0:1})${category:1}"
 	title=$(head -n 1 $path)
 	title="${title/'# '/}"
-	author=$(head -n 1 $path)
+	author=$(head -n 2 $path)
 	author="${author/'By: '/}"
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
 	echo "| $category | [$title]($url) | $author |" >> en/list.md
