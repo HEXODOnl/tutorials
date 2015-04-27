@@ -4,8 +4,10 @@ cat tutorials_template.md > en/list.md
 for path in en/tutorials/*/
 do
 	IFS='/' read -a explode <<< "$path"
+	category=${explode[2]}
+	category="$(tr '[:lower:]' '[:upper:]' <<< ${category:0:1})${category:1}"
 	echo '' > $path/index.md
-	echo "# ${explode[2]}" >> $path/index.md
+	echo "# Categories -> $category" >> $path/index.md
 	echo "| Title | Author | Date |" >> $path/index.md
 	echo "| ----- | ------ | ---- |" >> $path/index.md
 done;
