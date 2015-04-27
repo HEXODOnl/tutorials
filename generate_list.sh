@@ -8,7 +8,7 @@ do
 	echo "| ----- | ------ | ---- |" >> $path/index.md
 done;
 
-for path in en/tutorials/*/*.md
+for path in en/tutorials/*/*-*.md
 do
 	IFS='/' read -a explode <<< "$path"
 	category=${explode[2]}
