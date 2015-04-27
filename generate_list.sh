@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "| Title | Category |" > en/list.md
+cat tutorials_template.md > en/list.md
+echo "| Title | Category |" >> en/list.md
 echo "| ----- | -------- |" >> en/list.md
 
 for path in en/tutorials/*/*.md

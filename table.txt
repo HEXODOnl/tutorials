@@ -1,3 +1,0 @@
-| Title | Category |
-| ----- | -------- |
-| Getting started with your first server | Servers |
