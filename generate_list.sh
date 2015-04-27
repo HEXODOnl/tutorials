@@ -1,5 +1,21 @@
 #!/bin/bash
 
+for path in en/tutorials/*/
+do
+	cat category_template.md > $path/index.md
+	echo '' >> en/list.md
+	echo "| Title | Author | Date |" >> $path/index.md
+	echo "| ----- | ------ | ---- |" >> $path/index.md
+	IFS='/' read -a explode <<< "$path"
+	title=$(cat $path | sed -n 1p)
+	title="${title/'# '/}"
+	author=$(cat $path | sed -n 2p)
+	author="${author/'By: '/}"
+	date=`stat -c %y $path | cut -d ' ' -f1`
+	url="${explode[1]}/${explode[2]}/${explode[3]}"
+	echo "| [$title]($url) | $author | $date | " >> $path/index.md
+done;
+
 cat tutorials_template.md > en/list.md
 echo '' >> en/list.md
 echo "| Category | Title | Author | Date |" >> en/list.md
