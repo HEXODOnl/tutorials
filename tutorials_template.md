@@ -6,7 +6,7 @@ You can find the list of categories at this page.
     <div class="col-md-6">
         <div class="well well-sm">
             <center>
-                [Vpses](tutorials/vpses/index.md)
+                <h1>[Vpses](tutorials/vpses/index.md)</h1>
             </center>
         </div>
     </div>
