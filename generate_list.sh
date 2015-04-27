@@ -10,10 +10,10 @@ do
 	IFS='/' read -a explode <<< "$path"
 	category=${explode[2]}
 	category="$(tr '[:lower:]' '[:upper:]' <<< ${category:0:1})${category:1}"
-	title=$(head -n 1 $path)
+	title=$(cat $path | sed -n 1p)
 	title="${title/'# '/}"
-	author=$(head -n 2 $path)
+	author=$(cat $path | sed -n 2p)
 	author="${author/'By: '/}"
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
-	echo "| $category | [$title]($url) | $author |" >> en/list.md
+	echo "| $category | [$title]($url) | $author | " >> en/list.md
 done;

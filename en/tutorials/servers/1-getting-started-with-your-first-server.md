@@ -1,5 +1,5 @@
 # Getting started with your first server
-By: Cas de Reuver
+By: [Cas de Reuver](http://github.com/itscassa)
 
 ## Introduction
 So, you got your first server, but how can you use it? In this tutorial I'll guide you through the basic steps.
