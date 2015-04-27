@@ -14,7 +14,7 @@ do
 	title="${title/'# '/}"
 	author=$(cat $path | sed -n 2p)
 	author="${author/'By: '/}"
-	date=${stat -c %y $path | cut -d ' ' -f1}
+	date="${stat -c %y $path | cut -d ' ' -f1}"
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
 	echo "| $category | [$title]($url) | $author | $date | " >> en/list.md
 done;
