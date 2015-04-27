@@ -4,6 +4,7 @@
 
 [Home](index.md)
 [Tutorials](list.md)
+[Contribute](contribute.md)
 
 [Language]()
 

@@ -1,0 +1,3 @@
+test:
+  post:
+    - ./generate_list.sh
