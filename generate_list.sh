@@ -19,7 +19,8 @@ do
 	author="${author/'By: '/}"
 	date=`stat -c %y $path | cut -d ' ' -f1`
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
-	echo "| $category | [$title]($url) | $author | $date | " >> ${explode[0]}/${explode[1]}/${explode[2]}/list.md
+	#echo "| $category | [$title]($url) | $author | $date | " >> ${explode[0]}/${explode[1]}/${explode[2]}/list.md
+	echo ${explode[0]}/${explode[1]}/${explode[2]}
 done;
 
 cat tutorials_template.md > en/list.md
