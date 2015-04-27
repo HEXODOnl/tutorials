@@ -10,3 +10,5 @@
 
   * [English](/en/)
   * [Dutch](/nl/)
+
+[gimmick:Disqus](hexodotutorials)
