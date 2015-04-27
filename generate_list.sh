@@ -17,3 +17,7 @@ do
 	url="${explode[1]}/${explode[2]}/${explode[3]}"
 	echo "| $category | [$title]($url) | $author | " >> en/list.md
 done;
+
+git add -A
+git commit -m 'Generated list'
+git push origin gh-pages
