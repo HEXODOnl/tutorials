@@ -3,7 +3,9 @@
 cat tutorials_template.md > en/list.md
 for path in en/tutorials/*/
 do
+	IFS='/' read -a explode <<< "$path"
 	echo '' > $path/index.md
+	echo "# ${explode[2]}" >> $path/index.md
 	echo "| Title | Author | Date |" >> $path/index.md
 	echo "| ----- | ------ | ---- |" >> $path/index.md
 done;
