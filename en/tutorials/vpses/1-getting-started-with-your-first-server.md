@@ -1,5 +1,6 @@
 # Getting started with your first VPS
 By: [@itscassa](http://github.com/itscassa)  
+Difficulty: Beginner
 
 ## Introduction
 So, you got your first VPS, but how can you use it? In this tutorial I'll guide you through the basic steps.
