@@ -20,7 +20,7 @@ do
 	title="${title/'# '/}"
 	author=$(cat $path | sed -n 2p)
 	author="${author/'By: '/}"
-	difficulty=$(cat $path | sed -n 2p)
+	difficulty=$(cat $path | sed -n 3p)
 	difficulty="${difficulty/'Difficulty: '/}"
 	url="${explode[3]}"
 	echo "| [$title]($url) | $author | $difficulty | " >> ${explode[0]}/${explode[1]}/${explode[2]}/index.md
