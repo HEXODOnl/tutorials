@@ -26,7 +26,7 @@ do
 	echo ${explode[0]}/${explode[1]}/${explode[2]}
 done;
 
-git config --global user.email "circleci@0fi.net"
+git config --global user.email "me@cas.yt"
 git config --global user.name "CircleCI"
 
 git add --force -A
